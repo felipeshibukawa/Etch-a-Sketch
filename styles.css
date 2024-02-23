@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ecf0f1;
+}
+
+header {
+    /* background-color: yellowgreen; */
+    text-align: center;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+.content {
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1000px;
+    /* max-width: 55vw; */
+    margin: 0 auto;
+}
+
+.menu {
+    /* background-color: aqua; */
+    width: 240px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+}
+
+button {
+    width: 220px;
+    height: 40px;
+    border-radius: 6px;
+    border: solid 1px;
+    font-size: 1rem;
+}
+
+.active {
+    background-color: #1F2544;
+    color: #d3d3d3;
+}
+
+#colorPicker {
+    height: 100px;
+    width: 100px;
+    /* border: none; */
+}
+
+.canvas {
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: blueviolet; */
+    width: 480px;
+    height: 480px;
+    border: solid 1px;
+    box-sizing: content-box;
+}
+
+.cell {
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .menu:nth-child(1) {
+      order: 2;
+    }
+    h2 {
+        font-size: 2em; /* Reduz o tamanho do texto em telas estreitas */
+    }
+    .canvas {
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: blueviolet; */
+        width: 320px;
+        height: 320px;
+        border: solid 1px;
+        box-sizing: content-box;
+    }
+    
+    .cell {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+#rangeValue {
+    font-size: xx-large;
+    font-weight: 500;
+    margin: 0;
+}
+
+#rangeInput {
+    width: 220px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border: solid 1px;
+    border-radius: 6px;
+}
+  
+#rangeInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #1F2544;
+    cursor: pointer;
+    border-radius: 50%;
+}
+  
+#rangeInput::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #1F2544;
+    cursor: pointer;
+    border-radius: 50%;
+}
+  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* background-color: #f0f0f0; */
+    text-align: center;
+    padding: 10px 0;
+    font-size: larger;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
