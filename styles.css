@@ -7,7 +7,6 @@ html {
 }
 
 header {
-    /* background-color: yellowgreen; */
     text-align: center;
 }
 
@@ -22,12 +21,10 @@ h2 {
     justify-content: flex-start;
     align-items: center;
     max-width: 1000px;
-    /* max-width: 55vw; */
     margin: 0 auto;
 }
 
 .menu {
-    /* background-color: aqua; */
     width: 240px;
     height: 480px;
     display: flex;
@@ -53,13 +50,11 @@ button {
 #colorPicker {
     height: 100px;
     width: 100px;
-    /* border: none; */
 }
 
 .canvas {
     display: flex;
     flex-wrap: wrap;
-    /* background-color: blueviolet; */
     width: 480px;
     height: 480px;
     border: solid 1px;
@@ -81,12 +76,11 @@ button {
       order: 2;
     }
     h2 {
-        font-size: 2em; /* Reduz o tamanho do texto em telas estreitas */
+        font-size: 2em;
     }
     .canvas {
         display: flex;
         flex-wrap: wrap;
-        /* background-color: blueviolet; */
         width: 320px;
         height: 320px;
         border: solid 1px;
@@ -141,7 +135,6 @@ button {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* background-color: #f0f0f0; */
     text-align: center;
     padding: 10px 0;
     font-size: larger;
